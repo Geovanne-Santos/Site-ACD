@@ -17,7 +17,8 @@ window.addEventListener('DOMContentLoaded', function(e) {
         console.log(e);
         var result = e.results[0][0].transcript;
         console.log(result);
-        window.location.href = 'http://' + result + 'com';
+        if (result.toLowerCase())
+        window.location.href = 'http://' + result + '.com';
 
       }, false);
     } else{
@@ -27,7 +28,7 @@ window.addEventListener('DOMContentLoaded', function(e) {
 
 
   window.addEventListener('DOMContentLoaded', function(a) {
-    var speakBtn = document.querySelector('#themeBtn');
+    var themeBtn = document.querySelector('#themeBtn');
 
     if (window.SpeechRecognition || window.webkitSpeechRecognition) {
     
@@ -37,7 +38,7 @@ window.addEventListener('DOMContentLoaded', function(e) {
 
       recognition.lang = "pt-BR";
 
-      speakBtn.addEventListener('click', function(a) {
+      themeBtn.addEventListener('click', function(a) {
         recognition.start();
       }, false);
 
@@ -45,7 +46,7 @@ window.addEventListener('DOMContentLoaded', function(e) {
         console.log(a);
         var result = a.results[0][0].transcript;
         console.log(result);
-        if (result == 'Luz.') {
+        if (result == 'luz') {
             document.body.classList.toggle('luz-apagada');
         }
       }, false);
@@ -55,7 +56,7 @@ window.addEventListener('DOMContentLoaded', function(e) {
   }, false);
 
   window.addEventListener('DOMContentLoaded', function(b) {
-    var speakBtn = document.querySelector('#contactBtn');
+    var contactBtn = document.querySelector('#contactBtn');
 
     if (window.SpeechRecognition || window.webkitSpeechRecognition) {
     
@@ -65,7 +66,7 @@ window.addEventListener('DOMContentLoaded', function(e) {
 
       recognition.lang = "pt-BR";
 
-      speakBtn.addEventListener('click', function(b) {
+      contactBtn.addEventListener('click', function(b) {
         recognition.start();
       }, false);
 
@@ -73,7 +74,7 @@ window.addEventListener('DOMContentLoaded', function(e) {
         console.log(b);
         var result = b.results[0][0].transcript;
         console.log(result);
-        if (result == 'Contato.') {
+        if (result == 'contato') {
             document.location.href = 'contato.html';
         }
 
