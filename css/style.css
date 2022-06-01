@@ -1,0 +1,68 @@
+*, #contato.html {
+    font-size: 1.2rem;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.container{
+    background-color: rgb(129, 104, 146, 0.1);
+}
+
+.container > div{
+    margin-bottom: 10%;
+}
+
+nav a img{
+    width: 20%;
+    height: auto;
+    pointer-events: none;
+}
+
+.container{
+    margin-top: 3%;
+}
+
+.figure-caption{
+    background-color: rgb(97, 95, 95, 0.2);
+}
+
+.figure-caption > h3{
+    color: #0f0f0f;
+    font-size: 1.2em;
+}
+
+h1, h2, h3{
+    color: #0f0f0f;
+    font-family: 'Sen', sans-serif;
+}
+
+.h2 {
+    margin-bottom: 2.5%;
+}
+
+i{
+    font-size: 1.5em;
+}
+
+.col > a{
+    text-decoration: none;
+    color: #0f0f0f;
+}
+
+.a-menu{
+    color: #f8f4f4;
+}
+
+.a-menu:hover{
+    transition: 1s;
+    color: rgb(248, 244, 244, 0.2);
+}
+
+.ativado{
+    text-decoration: underline;
+}
+
+
+.luz-apagada {
+    color: white;
+    background-color: black;
+}
